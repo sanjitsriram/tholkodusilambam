@@ -1,438 +1,312 @@
 <!DOCTYPE html>
 <html>
-<title>தோள்கொடு சிலம்பம்</title>
-<link rel="icon" type="image/x-icon" href="logo2.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1{background-color: red;}
-body, h1,h2,h3,h4,h5,h6 {font-family: "Georgia", serif;}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+<head>
+  <title>தோள்கொடு சிலம்பம்</title>
+  <link rel="icon" type="image/x-icon" href="logo2.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Global Styles */
+    body, h1 {
+      background-color: #f2f2f2;
+    }
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Georgia", serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+    /* Sidebar */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    /* Page Content */
+    #main {
+      margin-left: 120px
+    }
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+    ul{
+      list-style: none;
+    }
+
+  </style>
+</head>
 
 <body class="w3-black">
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="logo2.png" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="logo2.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-margin-right w3-hide-large w3-hide-medium" id="myNavbar" style="position: fixed; padding-top: 5%;">
+    <div class="w3-bar w3-black w3-center w3-small">
+      <a class="w3-bar-item" style="width:25% !important"><img src="logo2.png" style="width: 90%;"></a>
+      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div><br class="w3-hide-large"><br class="w3-hide-large">
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-margin-right w3-hide-large w3-hide-medium w3-small" id="myNavbar">
-  <div class="w3-bar w3-black w3-center w3-small">
-    <a class="w3-bar-item" style="width:25% !important"><img src="logo2.png" style="width: 90%;"></a>
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <center>
-      <h1 class="w3-image"><b>THOLKODU SILAMBATTA KAZHAGAM</b></h1>
-      <h3 style="background-color: grey;">SLNO:406/2023-24</h3>
-      <img src="groupphoto1.jpg" alt="boy" class="w3-image" width="1519" height="1108">
-      <h2>SILAMBAM IS OUR BREATH</h2>
-      <p class="w3-justify">Silambam is a weapon-based art that originated in Tamil Nadu. The father of Silambam is an Agasthiyar. He learns silambam from his guru, Lord Murugan, which is historical myth content. It was 1000 years ago when people were walking so many kilometers, so they picked up a stick for their walking purpose, and they faced wild animals, so they defeated them with the use of sticks by natural thinking without a format. In the initial technical stage, they don't know the tricks; then Agasthiyar and Bothidharma learn the technique and take it all across Asia. The first thought of the silambam is the beauty and grace of the movement, but we all know the dangers behind beauty. Silambam is not an art; it's like a natural medicine without any doctors. then it's one kind of meditation where both your body and mind focus on a particular activity. Silambam doesn't have equality between genders; all are the same in this art. So ready to learn silambam
-      </p>
-    </center><hr>
-
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home" style="width: 100%;">
+    <h1 class="w3-image" style="background-color: red;"><b>THOLKODU SILAMBATTA KAZHAGAM</b></h1>
+    <h3 style="background-color: grey;">SLNO:406/2023-24</h3>
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <center>
-      <img src="sathis.png" style="width: 250px;">
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+      <center>
+        <img src="groupphoto1.jpg" alt="boy" class="w3-image" width="1519" height="1108">
+        <h2>SILAMBAM IS OUR BREATH</h2>
+        <p class="w3-justify">Silambam is a weapon-based art that originated in Tamil Nadu. The father of Silambam is an Agasthiyar. He learns silambam from his guru, Lord Murugan, which is historical myth content. It was 1000 years ago when people were walking so many kilometers, so they picked up a stick for their walking purpose, and they faced wild animals, so they defeated them with the use of sticks by natural thinking without a format. In the initial technical stage, they don't know the tricks; then Agasthiyar and Bothidharma learn the technique and take it all across Asia. The first thought of the silambam is the beauty and grace of the movement, but we all know the dangers behind beauty. Silambam is not an art; it's like a natural medicine without any doctors. then it's one kind of meditation where both your body and mind focus on a particular activity. Silambam doesn't have equality between genders; all are the same in this art. So ready to learn silambam </p>
+      </center>
+      <hr>
     
-      <p>
-        K. Sathish Kumar, M.Sc. (Chemistry)<br>
 
-        Founder of Tholkodu Silambatta Kazhagam.<br>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <center>
+        <img src="sathis.png" style="width: 250px;">
+        <p> K. Sathish Kumar,M.Sc. (Chemistry)<br> Founder of Tholkodu Silambatta Kazhagam.<br> I am very passionate about Silambam, a national-level gold medalist. I try to improve the next generation in silambam.<br> Member of Tamil Nadu Kalai Panpattu Thurai. </p>
+      </center>
 
-        I am very passionate about Silambam, a national-level gold medalist. I try to improve the next generation in silambam.<br>
+      <center>
+        <img src="pradeep2.jpg" style="width: 250px;">
+        <p> N. Pradeep, B.E. (Mechanical) and B.A. (Sociology)<br> Head Coach in Tholkodu Silambatta Kazhagam.<br> International-level Gold Medalist, CM Trophy Winner, and also a member of Tamil Nadu Kalai Panpattu Thurai. </p>
+      </center>
 
-        Member of Tamil Nadu Kalai Panpattu Thurai.
-      </p>
-    </center>
-    
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <center>
-      <img src="pradeep2.jpg" style="width: 250px;">
-      
-      <p>
-        N. Pradeep, B.E. (Mechanical) and B.A. (Sociology)<br>
+      <center>
+        <img src="bhuvanesh2.jpg" style="width: 250px;">
+        <p> S. Bhuvaneshvaran, B.A. (Economy)<br> Senior trainer of Tholkodu Silambatta Kazhagam.<br> National-level gold medalist in Goa, district-level gold medalist in Nehru Yuva Kendra.<br>  He is a very hard worker and sincere in his work. </p>
+      </center>
 
-        Head Coach in Tholkodu Silambatta Kazhagam. <br>
+      <hr>
 
-        International-level Gold Medalist,
-        
-        CM Trophy Winner, and also a member of Tamil Nadu Kalai Panpattu Thurai.
-      </p>
-    </center>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <center>
-      <img src="bhuvanesh2.jpg" style="width: 250px;">
-      
-      <p>
-        S. Bhuvaneshvaran, B.A. (Economy)<br>
-
-        Senior trainer of Tholkodu Silambatta Kazhagam.<br>
-
-        National-level gold medalist in Goa, district-level gold medalist in Nehru Yuva Kendra.<br> 
-
-        He is a very hard worker and sincere in his work.
-      </p>
-    </center>
-    <hr>
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4+</span><br>
-        Classes
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">12+</span><br>
-        Events Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">185+</span><br>
-        Happy Students
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">12+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    
-  <!-- End About Section -->
-  </div>
-  
-
-  <!-- Portfolio Section -->
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    * {box-sizing: border-box;}
-    body {font-family: Verdana, sans-serif;}
-    .mySlides {display: none;}
-    img {vertical-align: middle;}
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .text {font-size: 11px}
-    }
-    </style>
-    </head>
-    <body>
-    
-  
-    
-    <div class="slideshow-container" id="photos">
-    
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="class_poster.jpg" style="width:100%">
-      
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="nationals_minister1.jpg" style="width:100%">
-      
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="newspaper.jpg" style="width:100%">
-      
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="whole_class.jpg" style="width:100%">
-      
-    </div>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    
-    <script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
-    
-    </body>
-    <hr>
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="class_ad.jpg" style="width:100%">
-        <img src="fire.jpg" style="width:100%">
-        <img src="nationals_minister.jpg" style="width:100%">
-        <img src="gold_medal.jpg" style="width:100%">
-        <img src="government_match.jpg" style="width:100%">
-        <img src="adhi_Bhuva.jpg" style="width:100%">
-        <img src="girl_vaal.jpg" style="width:100%">
-        <img src="fight match.jpg" style="width:100%">
-        <img src="adhi_arun.jpg" style="width:100%">
-        <img src="ball.jpg" style="width:100%">
-        <img src="nelivu.jpg" style="width:100%">
-        <img src="refrees.jpg" style="width:100%">
-        <img src="surul.jpg" style="width:100%">
-        <img src="masters_fight.jpg" style="width:100%">
-        <img src="kedayam_fight.jpg" style="width:100%">
-        <img src="decathlon_match.jpg" style="width:100%">
-        <img src="kalaingar_noolagam.jpg" style="width:100%">
-        <img src="india.jpg" style="width:100%">
-        <img src="good_touch.jpg" style="width:100%">
-        <img src="child.jpg" style="width:100%">
-        <img src="arun_star.jpg" style="width:100%">
-        <img src="vijesh.jpg" style="width:100%">
-      </div>
-      
-      <div class="w3-half">
-        <img src="a4_notice.jpg" style="width:100%">
-        <img src="national_certficate .jpg" style="width:100%">
-        <img src="bhuva_fight.jpg" style="width:100%">
-        <img src="funtion_groupphoto.jpg" style="width:100%">
-        <img src="national_click.jpg" style="width:100%">
-        <img src="perfomance_groupphoto.jpg" style="width:100%">
-        <img src="narmadha_maankombu.jpg" style="width:100%">
-        <img src="girls.jpg" style="width:100%">
-        <img src="jumping.jpg" style="width:100%">
-        <img src="girls_pose.jpg" style="width:100%">
-        <img src="master_eeti.jpg" style="width:100%">
-        <img src="master_maankombu.jpg" style="width:100%">
-        <img src="stuntwalk.jpg" style="width:100%">
-        <img src="awarness_walk.jpg" style="width:100%">
-        <img src="awareness_groupphoto.jpg" style="width:100%">
-        <img src="manvaasam.jpg" style="width:100%">
-        <img src="pazhamalai.jpg" style="width:100%">
-        <img src="masters_vaal.jpg" style="width:100%">
-        <img src="brindha.jpg" style="width:100%">
-        <img src="thirumandi.jpg" style="width:100%">
-        <img src="old.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div><hr>
-
-  
-      <!--class details-->
-      <h3 class="w3-padding-16 w3-text-light-grey">CLASS DETAILS</h3><hr style="width:200px" class="w3-opacity">
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center ">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">CLASS LOCATIONS</li>
-            <li class="w3-padding-16 fa fa-map-marker w3-hover-opacity"><p>Anna Nagar, Varasakthi Vinayagar Kovil,<br> Near VAO Office,<br> Vanniyangudi Panchayat Office Front Side,<br> Sivagangai-630561.<br>Contact : +91 8489256107, +91 7010717593</p></li>
-            <li class="w3-padding-16 fa fa-map-marker w3-hover-opacity"><p>Pillaivayal Kali Amman Kovil (Front side),<br> Sivagangai-630561.<br>Contact : +91 8610540514, +91 8489256107</p></li>
-            <li class="w3-padding-16 fa fa-map-marker w3-hover-opacity"><p>Pazhamalai Nagar[Free coaching],<br>Thondi Road,<br> Sivagangai-630561.<br>Contact : +91 8489256107</p></li>
-            <li class="w3-padding-16 fa fa-map-marker w3-hover-opacity"><p>ST. Justin's Matriculation Hr. Sec School,<br> Madurai Road,<br> Sivagangai-630561.<br>Contact : +91 7010717593</p></li>
-            <li class="w3-padding-16">
-              <h2>Our Branches in Sivagangai!</h2>
-            </li>
-          </ul>
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">4+</span>
+          <br> Classes
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">12+</span>
+          <br> Events Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">185+</span>
+          <br> Happy Students
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">12+</span>
+          <br> Meetings
         </div>
       </div>
-      <!-- End Grid tables -->
-  
+    </div>
 
-  <!-- Contact Section -->
+    <!-- Portfolio Section -->
+     <center>
+    <div class="slideshow-container" id="photos" style="width: auto;">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="class_poster.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="nationals_minister1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="newspaper.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="whole_class.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </center>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+      <hr>
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="width: 90%; padding-left: 10%;">
+        <div class="w3-half">
+          <img src="class_ad.jpg" style="width:100%">
+          <img src="fire.jpg" style="width:100%">
+          <img src="nationals_minister.jpg" style="width:100%">
+          <img src="gold_medal.jpg" style="width:100%">
+          <img src="government_match.jpg" style="width:100%">
+          <img src="adhi_Bhuva.jpg" style="width:100%">
+          <img src="girl_vaal.jpg" style="width:100%">
+          <img src="fight match.jpg" style="width:100%">
+          <img src="adhi_arun.jpg" style="width:100%">
+          <img src="ball.jpg" style="width:100%">
+          <img src="nelivu.jpg" style="width:100%">
+          <img src="refrees.jpg" style="width:100%">
+          <img src="surul.jpg" style="width:100%">
+          <img src="masters_fight.jpg" style="width:100%">
+          <img src="kedayam_fight.jpg" style="width:100%">
+          <img src="decathlon_match.jpg" style="width:100%">
+          <img src="kalaingar_noolagam.jpg" style="width:100%">
+          <img src="india.jpg" style="width:100%">
+          <img src="good_touch.jpg" style="width:100%">
+          <img src="child.jpg" style="width:100%">
+          <img src="arun_star.jpg" style="width:100%">
+          <img src="vijesh.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="a4_notice.jpg" style="width:100%">
+          <img src="national_certficate .jpg" style="width:100%">
+          <img src="bhuva_fight.jpg" style="width:100%">
+          <img src="funtion_groupphoto.jpg" style="width:100%">
+          <img src="national_click.jpg" style="width:100%">
+          <img src="perfomance_groupphoto.jpg" style="width:100%">
+          <img src="narmadha_maankombu.jpg" style="width:100%">
+          <img src="girls.jpg" style="width:100%">
+          <img src="jumping.jpg" style="width:100%">
+          <img src="girls_pose.jpg" style="width:100%">
+          <img src="master_eeti.jpg" style="width:100%">
+          <img src="master_maankombu.jpg" style="width:100%">
+          <img src="stuntwalk.jpg" style="width:100%">
+          <img src="awarness_walk.jpg" style="width:100%">
+          <img src="awareness_groupphoto.jpg" style="width:100%">
+          <img src="manvaasam.jpg" style="width:100%">
+          <img src="pazhamalai.jpg" style="width:100%">
+          <img src="masters_vaal.jpg" style="width:100%">
+          <img src="brindha.jpg" style="width:100%">
+          <img src="thirumandi.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <!--class details-->
+    <center><h3>CLASS DETAILS</h3>
+      <div class="w3-margin-bottom">
+        <ul class="w3-center ">
+          <center><table border="2px" style="border-collapse: collapse; text-align: center; color: black; background-color: white;">
+          <tr>
+            <th colspan="1"><li class="w3-dark-grey w3-center w3-xlarge">CLASS LOCATIONS</li></th>
+          </tr>
+          <tr>
+            <td><li class="fa fa-map-marker w3-center w3-hover-opacity"><p>Anna Nagar, Varasakthi Vinayagar Kovil,<br> Near VAO Office,<br> Vanniyangudi Panchayat Office Front Side,<br> Sivagangai-630561.<br>Contact : +91 8489256107, +91 7010717593</p></li></td>
+          </tr>
+          <tr>
+            <td><li class="fa fa-map-marker w3-center w3-hover-opacity"><p>Pillaivayal Kali Amman Kovil (Front side),<br> Sivagangai-630561.<br>Contact : +91 8610540514, +91 8489256107</p></li></td>
+          </tr>
+          <tr>
+            <td><li class="fa fa-map-marker w3-center w3-hover-opacity"><p>Pazhamalai Nagar[Free coaching],<br>Thondi Road,<br> Sivagangai-630561.<br>Contact : +91 8489256107</p></li></td>
+          </tr>
+          <tr>
+            <td><li class="fa fa-map-marker w3-center w3-hover-opacity"><p>ST. Justin's Matriculation Hr. Sec School,<br> Madurai Road,<br> Sivagangai-630561.<br>Contact : +91 7010717593</p></li></td>
+          </tr>
+          <tr>
+            <td><li>
+              <h2>Our Branches in Sivagangai!</h2>
+            </li></td>
+          </tr>
+        </table></center>
+        </ul>
+      </div>
+    </div>
+  </center>
+    <!-- End Grid tables -->
+    
+    <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact us</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><a class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" href="https://maps.app.goo.gl/vM6KtGz8F9duCxGt6"></a> Anna Nagar,<br> Near VAO Office,<br> Vanniyangudi Panchayat Office Front Side,<br> Sivagangai-630561<br>(click on location symbol for google map)</p>
+      <p><a class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" href="https://maps.app.goo.gl/vM6KtGz8F9duCxGt6" style="text-decoration: none;"></a><br> Anna Nagar,<br> Near VAO Office,<br> Vanniyangudi Panchayat Office Front Side,<br> Sivagangai-630561<br>(click on location symbol for google map)</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 8489256107, +91 7010717593</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tholkodusilambam@gmail.com</p><hr>
     </div><br>
             
   <!-- End Contact Section -->
   </div>
-  
+    
   <center>
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
       <center><h>FOLLOW ON</h></center>
-      <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/tholkodu_silambam?igsh=eTJ5dXoxYTZkZDhq"></a>
-      <a class="fa fa-pinterest-p w3-hover-opacity" href="https://pin.it/2qteTI2rT "></a>
-      <a class="fa fa-youtube w3-hover-opacity" href="https://youtube.com/@tholkodusilambam?si=QLKDtDZ5VXFQDF2u"></a>
-      <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/profile.php?id=61561310932702"></a>
+      <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/tholkodu_silambam?igsh=eTJ5dXoxYTZkZDhq" style="text-decoration: none;"></a>
+      <a class="fa fa-pinterest-p w3-hover-opacity" href="https://pin.it/2qteTI2rT " style="text-decoration: none;"></a>
+      <a class="fa fa-youtube w3-hover-opacity" href="https://youtube.com/@tholkodusilambam?si=QLKDtDZ5VXFQDF2u" style="text-decoration: none;"></a>
+      <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/profile.php?id=61561310932702" style="text-decoration: none;"></a>
       <p class="w3-medium">Powered by <a target="_blank" class="w3-hover-text-red">THOLKODU SILAMBATTA KAZHAGAM</a></p>
     <!-- End footer -->
     </footer>
-  </center>
-<!-- END PAGE CONTENT -->
-</div>
+  </center>    
+    <script src="script.js"></script>
+    
+    </body>
+    </html>
+    
+    
 
-<!--star rating-->
-<style>
-  body {
-  padding-left: 20px;
-  }
-  .rating span {
-  font-size: 25px;
-  cursor: pointer;
-  color: gainsboro;
-  }
-  .rating span.active {
-  color: red;
-  }
-  #displayRating {
-  font-size: large;
-  margin: 10px;
-  color: grey;
-  }
-</style>
-
- 
-  <div class="rating">
-  <center>
-    <h1 style="background-color: black;">Rate us<br></h1>
-  <span onclick="processRating(this)" id="star-1" data-index="1" data-status="0">★</span>
-  <span onclick="processRating(this)" id="star-2" data-index="2" data-status="0">★</span>
-  <span onclick="processRating(this)" id="star-3" data-index="3" data-status="0">★</span>
-  <span onclick="processRating(this)" id="star-4" data-index="4" data-status="0">★</span>
-  <span onclick="processRating(this)" id="star-5" data-index="5" data-status="0">★</span>
-  </div>
-  <div id="displayRating">
-  </div>
-  </center>
-  <script>
-    function processRating(obj) {
-    let index = parseInt(obj.dataset.index);
-    let status = parseInt(obj.dataset.status);
-    if (status === 0) {
-    for (let counter = index; counter >= 1; counter--) {
-    let element = document.getElementById("star-" + counter);
-    element.dataset.status = 1;
-    element.classList.add("active");
-    }
-    }
-    else {
-    for (let counter = index; counter <= 5; counter++) {
-    let element = document.getElementById("star-" + counter);
-    element.dataset.status = 0;
-    element.classList.remove("active");
-    }
-    }
-    document.getElementById("displayRating").innerHTML = `Thank you for rating of
-    ${status == 0 ? index : index - 1}. We are keep improving`;
-    }
-    </script>
-
-
-
-</body>
-</html>
+        
