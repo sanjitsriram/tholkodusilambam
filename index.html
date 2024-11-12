@@ -50,6 +50,31 @@
     ul {
       list-style: none;
     }
+
+    .menu {
+    background-color: #1c1c1c;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 105px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.menu a img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
   </style>
 </head>
 
@@ -57,7 +82,7 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <img src="logo2.png" style="width:100%">
+    <img src="logo2.png" style="width:100%;">
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>HOME</p>
@@ -79,11 +104,29 @@
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-margin-right w3-hide-large w3-hide-medium" id="myNavbar" style="position: fixed; padding-bottom: 20%;">
     <div class="w3-bar w3-black w3-center w3-small">
-      <a class="w3-bar-item" style="width:25% !important"><img src="logo2.png" style="width: 90%;"></a>
-      <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      <div class="menu" style="width: 425px; padding-left: 1px;">
+        <img src="logo2.png" style="width:50px;">
+        <center>
+          <div style="display: flex;">
+            <a href="#home">
+                <i class="fa fa-home"></i>
+                <span>HOME</span>
+            </a>
+            <a href="#about">
+                <i class="fa fa-user"></i>
+                <span>ABOUT</span>
+            </a>
+            <a href="#photos">
+                <i class="fa fa-eye"></i>
+                <span>PHOTOS</span>
+            </a>
+            <a href="#contact">
+                <i class="fa fa-envelope"></i>
+                <span>CONTACT</span>
+            </a>
+          </div>
+        </center>
+    </div>
     </div>
   </div><br class="w3-hide-large"><br class="w3-hide-large">
 
